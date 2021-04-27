@@ -1,7 +1,7 @@
 var starttl = 100;
 var ttl = 100;
 var refilling = false;
-var tokenstateurl = 'https://comet-user-content.sdsc.edu/tokenjobstate.cgi?token=';
+var tokenstateurl = 'https://www.comet-user-content.sdsc.edu/tokenjobstate.cgi?token=';
 
 window.addEventListener('DOMContentLoaded', () => {
     window.setInterval(countdownReload,200);
