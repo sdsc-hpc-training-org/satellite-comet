@@ -25,9 +25,9 @@ our $jobstateipmask = '10.21.2.0/24';
 
 # number of secs an entry can remain in 'pending' or 'mapped' state
 # 'modified' field is updated when moving from pending to mapped.
-# comet has a max runtime of 48h
-# set max to 49h in case job sat in queue a little long.
-our $ttl_secs = 176400;
+# comet has a max runtime of 7 days
+# set max to 8 days in case the job was in the queue for a bit.
+our $ttl_secs = 691200;
 
 # the externally-facing port requests come in to
 # usually the same as listenport unless DNAT is in play.
